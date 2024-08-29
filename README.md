@@ -5,7 +5,7 @@ A procedural macro for linking Rust functions with C++ using Itanium name mangli
 use cxx_linker::cxx_link;
 
 extern "C" {
-    #[cxx_link("blobstore::foo<int>::bar(int, blobstore::SomeType&, bool)")
+    #[cxx_link("blobstore::foo<int>::bar(int, blobstore::SomeType&, bool)")]
     fn bar(a: i32, b: *mut (), c: bool);
 }
 ```
