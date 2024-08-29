@@ -1,0 +1,19 @@
+[package]
+name = "cxx_linker"
+version = "0.1.0"
+edition = "2021"
+description = "A procedural macro for linking Rust functions with C++ using Itanium name mangling."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/NightProg/cxx_linker.git"
+homepage = "https://github.com/NightProg/cxx_linker.git"
+keywords = ["cxx", "linker", "mangling", "rust", "c++"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.76", features = ["full"]}
+proc-macro2 = "1.0.86"
+quote = "1.0.37"
+mangler = "0.2.0"
